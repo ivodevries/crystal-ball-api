@@ -1,0 +1,282 @@
+Neural Voice
+Standard Voice
+Arabic
+arb
+Zeina
+Female
+Arabic (Gulf)
+ar-AE
+Hala*
+Zayd*
+Female
+Male
+Dutch (Belgian)
+nl-BE
+Lisa
+Female
+Catalan
+ca-ES
+Arlet
+Female
+Chinese (Cantonese)
+yue-CN
+Hiujin
+Female
+Chinese (Mandarin)
+cmn-CN
+Zhiyu
+Female
+Danish
+da-DK
+Naja
+Mads
+Sofie
+Female
+Male
+Female
+Dutch
+nl-NL
+Laura
+Lotte
+Ruben
+Female
+Female
+Male
+English (Australian)
+en-AU
+Nicole
+Olivia
+Russell
+Female
+Female
+Male
+English (British)
+en-GB
+Amy**
+Emma
+Brian
+Arthur
+Female
+Female
+Male
+Male
+English (Indian)
+en-IN
+Aditi*
+Raveena
+Kajal*
+Female
+Female
+Female
+English (Ireland)
+en-IE
+Niamh
+Female
+English (New Zealand)
+en-NZ
+Aria
+Female
+English (South African)
+en-ZA
+Ayanda
+Female
+English (US)
+en-US
+Danielle
+Gregory
+Ivy
+Joanna**
+Kendra
+Kimberly
+Salli
+Joey
+Justin
+Kevin
+Matthew**
+Ruth
+Stephen
+Female
+Male
+Female (child)
+Female
+Female
+Female
+Female
+Male
+Male (child)
+Male (child)
+Male
+Female
+Male
+English (Welsh)
+en-GB-WLS
+Geraint
+Male
+Finnish
+fi-FI
+Suvi
+Female
+French
+fr-FR
+Céline/Celine
+Léa
+Mathieu
+Rémi
+Female
+Female
+Male
+Male
+French (Belgian)
+fr-BE
+Isabelle
+Female
+French (Canadian)
+fr-CA
+Chantal
+Gabrielle
+Liam
+Female
+Female
+Male
+German
+de-DE
+Marlene
+Vicki
+Hans
+Daniel
+Female
+Female
+Male
+Male
+German (Austrian)
+de-AT
+Hannah
+Female
+Hindi
+hi-IN
+Aditi*
+Kajal*
+Female
+Female
+Icelandic
+is-IS
+Dóra/Dora
+Karl
+Female
+Male
+Italian
+it-IT
+Carla
+Bianca
+Giorgio
+Adri
+Female
+Female
+Male
+Male
+Japanese
+ja-JP
+Mizuki
+Takumi
+Kazuha
+Tomoko
+Female
+Male
+Female
+Female
+Korean
+ko-KR
+Seoyeon
+Female
+
+rwegian
+nb
+Liv
+Ida
+Female
+Female
+Polish
+pl-PL
+Ewa
+Maja
+Jacek
+Jan
+Ola
+Female
+Female
+Male
+Male
+Female
+Portuguese (Brazilian)
+pt-BR
+Camila
+Vitória/Vitoria
+Ricardo
+Thiago
+Female
+Female
+Male
+Male
+Portuguese (European)
+pt-PT	
+Inês/Ines
+Cristi
+Female
+Male
+Romanian
+ro-RO
+Carmen
+Female
+Russian
+ru-RU
+Tatyana
+Maxim
+Female
+Male
+Spanish (European)
+es-ES
+Conchita
+Lucia
+Enrique
+Sergio
+Female
+Female
+Male
+Male
+Spanish (Mexican)
+es-MX
+Mia
+Andrés
+Female
+Male
+Spanish (US)
+es-US
+Lupe**
+Penélope/Penelope
+Miguel
+Pedro
+Female
+Female
+Male
+Male
+Swedish
+sv-SE
+Astrid
+Elin
+Female
+Female
+Turkish
+tr-TR
+Filiz
+Female
+Welsh
+cy-GB
+Gwyneth
+Female
+* This voice is bilingual. For more information, see Bilingual Voices.
+** These voices can be used with Newscaster speaking styles when used with the Neural format. For more information, see NTTS Newscaster Speaking Style.
+In addition to the above voices, Amazon Polly can build you a custom Brand Voice that reflects your brand persona, providing you the opportunity to offer unique and exclusive NTTS voices to your customers. To learn more about Amazon Polly Brand Voices, please see Brand Voice.
+Did this page help you?
+Provide feedback
+Next topic:Bilingual Voices
+Previous topic:Python Examples

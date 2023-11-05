@@ -1,0 +1,36 @@
+{
+    "files": [
+        "src/index.ts"
+    ],
+    "include": [
+        "src/**/*.ts",
+        "jest.config.ts",
+        "node_modules/jest-extended/types/index.d.ts"
+    ],
+    "compilerOptions": {
+        "target": "es5",
+        "module": "node16",
+        "moduleResolution": "node16",
+        "declaration": true,
+        "outDir": "./dist",
+        "noEmit": false,
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictBindCallApply": true,
+        "strictPropertyInitialization": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedIndexedAccess": true,
+        "noImplicitOverride": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "resolveJsonModule": true
+    }
+}

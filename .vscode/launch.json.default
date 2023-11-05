@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Jest Tests",
+            "type": "node",
+            "request": "launch",
+            "runtimeArgs": [
+                "--inspect-brk",
+                "${workspaceRoot}/node_modules/jest/bin/jest.js",
+                "--runInBand",
+                "false",
+                 // will match the spec file for both src/folder/example.ts as src/folder/example.spec.ts
+                ".*${fileDirnameBasename}/${fileBasenameNoExtension}.*${fileExtname}",
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "env": {
+                "NODE_OPTIONS": "--experimental-vm-modules --no-warnings",
+            }
+        }
+    ]
+}
