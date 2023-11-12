@@ -61,5 +61,6 @@ export const getAnswer = async (personaName: PersonaValue, question:string) => {
     })
         .then(res => res.json())
         // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-        .then(json =>json.choices[0].message.content as string);
+        .then(json =>json.choices[0].message.content as string)
+	.catch(e => console.trace(e));
 };

@@ -10,7 +10,7 @@ type CommandOptions = {
 };
 
 const executeCommand = async (command: string, options?: CommandOptions) : Promise<any> => {
-    const spotifyActivationCommand = /^((z|s|x)(i|e)[^a-z]?ra)/i;
+    const spotifyActivationCommand = /^((z|s|x)h?(y|i|e|ee)[^a-z]?ra)/i;
     if (spotifyActivationCommand.test(command)) {
         const trackName = command.replace(spotifyActivationCommand, '').replace(/^[^a-z]+/i, '').trim();
         await spotify.authorize();
@@ -35,15 +35,25 @@ const executeCommand = async (command: string, options?: CommandOptions) : Promi
                         await spotify.startSession();
                         await new Promise(resolve => setTimeout(resolve, 10000));
                     }
-                    {
+
+                    for(let i = 0; i < 5; i++) {
                         const devices = await spotify.api.getMyDevices();
                         const deviceId = devices.body.devices[0]?.id;
                         if (deviceId) {
                             await spotify.api.transferMyPlayback([deviceId]);
+                            break;
                         }
+                        await new Promise(resolve => setTimeout(resolve, 5000));
                     }
 
-                    await spotify.play(track);
+                    for(let i = 0; i < 5; i++) {
+                        try {
+                            await spotify.play(track);
+                            break;
+                        } catch(e) {
+                            await new Promise(resolve => setTimeout(resolve, 5000));
+                        }
+                    }
                 }
             }
             return 'spotify: ' + track.name;

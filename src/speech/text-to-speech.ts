@@ -126,6 +126,9 @@ export class TextToSpeechService {
     }
 
     async synthesize(text: string, lang?: string): Promise<Buffer> {
+        if (lang && lang in voices) {
+            lang = languageNameToIsoCode(lang as keyof typeof voices);
+        }
         return this.ttsProvider.synthesize(text, this.ttsProvider.getVoiceId(lang));
     }
 }
