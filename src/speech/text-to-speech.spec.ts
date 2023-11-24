@@ -70,9 +70,9 @@ test('text-to-speech with AWS Polly (NL)', async () => {
     playBuffer(audio);
 });
 
-test.only('save audio to disk', async () => {
+test('save audio to disk', async () => {
     const ttsService = new TextToSpeechService(new AwsTextToSpeechProvider());
-    const text = 'zira lord of the rings lofi';
+    const text = 'zira example song';
     const audio = await ttsService.synthesize(text);
     expect(audio).toBeObject();
     saveBuffer(audio, text);
@@ -80,8 +80,6 @@ test.only('save audio to disk', async () => {
     const filename = text.replace(/[^a-z0-9]/gi, '-').toLowerCase();
     const filePath = `./artifacts/${filename}.wav`;
 
-    console.log(filePath);
-    // wait 1 sec
     await new Promise(resolve => setTimeout(resolve, 1000));
     expect(existsSync(filePath)).toBeTruthy();
 });

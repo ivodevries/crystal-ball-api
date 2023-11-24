@@ -29,11 +29,10 @@ test('execute spotify voice command', async () => {
     const voiceContents = readFileSync('./artifacts/zira-sound-of-silence.wav');
     const songVoiceCommand = await executeVoiceCommand(voiceContents);
 
-    console.log(songVoiceCommand);
     expect(songVoiceCommand).toStartWith('spotify:');
 }, 30_000);
 
-test.only('ask dutch question',  async () => {
+test('ask dutch question', async () => {
     const question = 'wat is de grootste vlinder?';
 
     const fileExists = existsSync('./artifacts/wat-is-de-grootste-vlinder.wav');
@@ -57,4 +56,16 @@ test.only('ask dutch question',  async () => {
     expect(textDetails.language).toBe('dutch');
     expect(isoCode).toBe('nl');
 }, 30_000);
+
+test.only('html output', async () => {
+    const question = 'what is the largest butterfly?';
+    await executeCommand(question, {
+        language: 'en'
+    });
+    let htmlContents = '';
+    const readFile = () => htmlContents = readFileSync('./output/index.html', 'utf-8');
+    expect(readFile).not.toThrow();
+
+    expect(htmlContents).toContain(question);
+});
 

@@ -1,5 +1,5 @@
 {
-  "name": "typescript-jest-template",
+  "name": "crystal-ball-api",
   "author": "Ivo de Vries",
   "license": "ISC",
   "version": "1.0.0",
@@ -17,6 +17,7 @@
     "test": "cross-env NODE_OPTIONS=\"--experimental-vm-modules --no-warnings\" jest",
     "test-wip": "cross-env NODE_OPTIONS=\"--experimental-vm-modules --no-warnings\" jest --watch --testNamePattern='@wip'",
     "test-watch": "cross-env NODE_OPTIONS=\"--experimental-vm-modules --no-warnings\" jest --watch --detectOpenHandles",
+    "example": "echo npm run test-watch -- speech/text",
     "build": "tsc"
   },
   "keywords": [],

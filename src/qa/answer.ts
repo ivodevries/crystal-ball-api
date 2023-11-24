@@ -23,7 +23,7 @@ const personas = {
 
 type PersonaValue = keyof typeof personas;
 
-export const getAnswerFromOpenAI = async (personaName: PersonaValue, question:string) => {
+export const getAnswerFromOpenAI = async (personaName: PersonaValue, question: string) => {
     const params: OpenAI.Chat.ChatCompletionCreateParams = {
         messages: [
             ...personas[personaName].systemMessages,
@@ -39,7 +39,7 @@ export const getAnswerFromOpenAI = async (personaName: PersonaValue, question:st
     return openai.chat.completions.create(params);
 };
 
-export const getAnswer = async (personaName: PersonaValue, question:string) => {
+export const getAnswer = async (personaName: PersonaValue, question: string) => {
     const persona = personas[personaName];
     return fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
@@ -61,6 +61,6 @@ export const getAnswer = async (personaName: PersonaValue, question:string) => {
     })
         .then(res => res.json())
         // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-        .then(json =>json.choices[0].message.content as string)
-	.catch(e => console.trace(e));
+        .then(json => json.choices[0].message.content as string)
+        .catch(e => console.trace(e));
 };
